@@ -5,7 +5,7 @@
     "www.googleapis.com",
     "img.shields.io",
     "https://cloud.google.com/bigquery/docs/dataqna",
-    "https://github.com/googleapis/nodejs-data-qna/blob/master/CHANGELOG.md"
+    "https://github.com/googleapis/nodejs-data-qna"
   ],
   "silent": true,
   "concurrency": 10

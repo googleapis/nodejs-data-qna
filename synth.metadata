@@ -3,8 +3,8 @@
     {
       "git": {
         "name": ".",
-        "remote": "git@github.com:steffnay/nodejs-data-qna.git",
-        "sha": "c142cd0b8fde458ac9c014310e752a0a9567dcd2"
+        "remote": "sso://user/steffanyb/nodejs-data-qna",
+        "sha": "ce813770b0e899ee68a41f734393940e381ec0f3"
       }
     },
     {
