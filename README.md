@@ -21,6 +21,10 @@ A comprehensive list of changes in each version may be found in
 * [Data QnA Documentation][product-docs]
 * [github.com/googleapis/nodejs-data-qna](https://github.com/googleapis/nodejs-data-qna)
 
+> **:warning: WARNING:**  
+> Data QnA is currently in private Alpha. Access is only available to
+   allowlisted users. Apply for access [here](http://g.co/cloud/data-qna).
+
 Read more about the client libraries for Cloud APIs, including the older
 Google APIs Client Libraries, in [Client Libraries Explained][explained].
 
