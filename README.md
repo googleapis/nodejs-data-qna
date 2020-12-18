@@ -9,6 +9,8 @@
 [![codecov](https://img.shields.io/codecov/c/github/googleapis/nodejs-data-qna/master.svg?style=flat)](https://codecov.io/gh/googleapis/nodejs-data-qna)
 
 
+
+
 Dataqna client for Node.js
 
 
@@ -18,10 +20,6 @@ A comprehensive list of changes in each version may be found in
 * [Data QnA Node.js Client API Reference][client-docs]
 * [Data QnA Documentation][product-docs]
 * [github.com/googleapis/nodejs-data-qna](https://github.com/googleapis/nodejs-data-qna)
-
-> **:warning: WARNING:**  
-> Data QnA is currently in private Alpha. Access is only available to
-   allowlisted users. Apply for access [here](http://g.co/cloud/data-qna).
 
 Read more about the client libraries for Cloud APIs, including the older
 Google APIs Client Libraries, in [Client Libraries Explained][explained].
@@ -117,7 +115,7 @@ Apache Version 2.0
 
 See [LICENSE](https://github.com/googleapis/nodejs-data-qna/blob/master/LICENSE)
 
-[client-docs]: https://googleapis.dev/python/dataqna/latest
+[client-docs]: https://googleapis.dev/nodejs/dataqna/latest
 [product-docs]: https://cloud.google.com/bigquery/docs/dataqna
 [shell_img]: https://gstatic.com/cloudssh/images/open-btn.png
 [projects]: https://console.cloud.google.com/project
