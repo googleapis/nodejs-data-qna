@@ -4,15 +4,15 @@
       "git": {
         "name": ".",
         "remote": "git@github.com:googleapis/nodejs-data-qna.git",
-        "sha": "58649b1b5e3e3b66628ed6a97ee8236d85536030"
+        "sha": "b2705dfcf6b966b66f92f6662751ca15ea263980"
       }
     },
     {
       "git": {
         "name": "googleapis",
         "remote": "https://github.com/googleapis/googleapis.git",
-        "sha": "d9b32e92fa57c37e5af0dc03badfe741170c5849",
-        "internalRef": "359580699"
+        "sha": "e69f9d4f00a558a359a55f3bb33ba582d6bfc805",
+        "internalRef": "359593247"
       }
     },
     {
