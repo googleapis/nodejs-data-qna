@@ -12,11 +12,10 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-
 'use strict';
 
-function main(name, interpretationIndex) {
-  // [START dataqna_execute_question_sample]
+function main(name) {
+  // [START dataqna_get_question_sample]
   /**
    * TODO(developer): Uncomment these variables before running the sample.
    */
@@ -26,9 +25,9 @@ function main(name, interpretationIndex) {
    */
   // const name = 'abc123'
   /**
-   *  Required. Index of the interpretation to execute.
+   *  The list of fields to be retrieved.
    */
-  // const interpretationIndex = 1234
+  // const readMask = ''
 
   // Imports the Dataqna library
   const {QuestionServiceClient} = require('@google-cloud/data-qna').v1alpha;
@@ -36,20 +35,19 @@ function main(name, interpretationIndex) {
   // Instantiates a client
   const dataqnaClient = new QuestionServiceClient();
 
-  async function executeQuestion() {
+  async function getQuestion() {
     // Construct request
     const request = {
       name,
-      interpretationIndex,
     };
 
     // Run request
-    const response = await dataqnaClient.executeQuestion(request);
+    const response = await dataqnaClient.getQuestion(request);
     console.log(response);
   }
 
-  executeQuestion();
-  // [END dataqna_execute_question_sample]
+  getQuestion();
+  // [END dataqna_get_question_sample]
 }
 
 process.on('unhandledRejection', err => {

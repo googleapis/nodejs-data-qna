@@ -428,6 +428,10 @@ export class AutoSuggestionServiceClient {
    *   for more details and examples.
    * @example
    * const [response] = await client.suggestQueries(request);
+   *
+   * @example <caption>include:samples/generated/v1alpha/auto_suggestion_service.suggest_queries.js</caption>
+   * region_tag:dataqna_suggest_queries_sample
+   *
    */
   suggestQueries(
     request?: protos.google.cloud.dataqna.v1alpha.ISuggestQueriesRequest,

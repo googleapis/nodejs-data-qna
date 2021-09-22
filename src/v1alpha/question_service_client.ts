@@ -367,6 +367,10 @@ export class QuestionServiceClient {
    *   for more details and examples.
    * @example
    * const [response] = await client.getQuestion(request);
+   *
+   * @example <caption>include:samples/generated/v1alpha/question_service.get_question.js</caption>
+   * region_tag:dataqna_get_question_sample
+   *
    */
   getQuestion(
     request?: protos.google.cloud.dataqna.v1alpha.IGetQuestionRequest,
@@ -461,6 +465,10 @@ export class QuestionServiceClient {
    *   for more details and examples.
    * @example
    * const [response] = await client.createQuestion(request);
+   *
+   * @example <caption>include:samples/generated/v1alpha/question_service.create_question.js</caption>
+   * region_tag:dataqna_create_question_sample
+   *
    */
   createQuestion(
     request?: protos.google.cloud.dataqna.v1alpha.ICreateQuestionRequest,
@@ -555,6 +563,10 @@ export class QuestionServiceClient {
    *   for more details and examples.
    * @example
    * const [response] = await client.executeQuestion(request);
+   *
+   * @example <caption>include:samples/generated/v1alpha/question_service.execute_question.js</caption>
+   * region_tag:dataqna_execute_question_sample
+   *
    */
   executeQuestion(
     request?: protos.google.cloud.dataqna.v1alpha.IExecuteQuestionRequest,
@@ -648,6 +660,10 @@ export class QuestionServiceClient {
    *   for more details and examples.
    * @example
    * const [response] = await client.getUserFeedback(request);
+   *
+   * @example <caption>include:samples/generated/v1alpha/question_service.get_user_feedback.js</caption>
+   * region_tag:dataqna_get_user_feedback_sample
+   *
    */
   getUserFeedback(
     request?: protos.google.cloud.dataqna.v1alpha.IGetUserFeedbackRequest,
@@ -748,6 +764,10 @@ export class QuestionServiceClient {
    *   for more details and examples.
    * @example
    * const [response] = await client.updateUserFeedback(request);
+   *
+   * @example <caption>include:samples/generated/v1alpha/question_service.update_user_feedback.js</caption>
+   * region_tag:dataqna_update_user_feedback_sample
+   *
    */
   updateUserFeedback(
     request?: protos.google.cloud.dataqna.v1alpha.IUpdateUserFeedbackRequest,
