@@ -12,23 +12,24 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-
 'use strict';
 
-function main(parent, question) {
-  // [START dataqna_v1alpha_generated_QuestionService_CreateQuestion_async]
+function main(userFeedback) {
+  // [START dataqna_v1alpha_generated_QuestionService_UpdateUserFeedback_async]
   /**
    * TODO(developer): Uncomment these variables before running the sample.
    */
   /**
-   *  Required. The name of the project this data source reference belongs to.
-   *  Example: `projects/foo/locations/bar`
+   *  Required. The user feedback to update. This can be called even if there is no
+   *  user feedback so far.
+   *  The feedback's name field is used to identify the user feedback (and the
+   *  corresponding question) to update.
    */
-  // const parent = 'abc123'
+  // const userFeedback = ''
   /**
-   *  Required. The question to create.
+   *  The list of fields to be updated.
    */
-  // const question = ''
+  // const updateMask = ''
 
   // Imports the Dataqna library
   const {QuestionServiceClient} = require('@google-cloud/data-qna').v1alpha;
@@ -36,20 +37,19 @@ function main(parent, question) {
   // Instantiates a client
   const dataqnaClient = new QuestionServiceClient();
 
-  async function createQuestion() {
+  async function updateUserFeedback() {
     // Construct request
     const request = {
-      parent,
-      question,
+      userFeedback,
     };
 
     // Run request
-    const response = await dataqnaClient.createQuestion(request);
+    const response = await dataqnaClient.updateUserFeedback(request);
     console.log(response);
   }
 
-  createQuestion();
-  // [END dataqna_v1alpha_generated_QuestionService_CreateQuestion_async]
+  updateUserFeedback();
+  // [END dataqna_v1alpha_generated_QuestionService_UpdateUserFeedback_async]
 }
 
 process.on('unhandledRejection', err => {
