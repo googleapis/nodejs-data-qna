@@ -12,23 +12,24 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-
 'use strict';
 
-function main(name) {
-  // [START dataqna_v1alpha_generated_QuestionService_GetQuestion_async]
+function main(userFeedback) {
+  // [START dataqna_v1alpha_generated_QuestionService_UpdateUserFeedback_async]
   /**
    * TODO(developer): Uncomment these variables before running the sample.
    */
   /**
-   *  Required. The unique identifier for the question.
-   *  Example: `projects/foo/locations/bar/questions/1234`
+   *  Required. The user feedback to update. This can be called even if there is no
+   *  user feedback so far.
+   *  The feedback's name field is used to identify the user feedback (and the
+   *  corresponding question) to update.
    */
-  // const name = 'abc123'
+  // const userFeedback = {}
   /**
-   *  The list of fields to be retrieved.
+   *  The list of fields to be updated.
    */
-  // const readMask = {}
+  // const updateMask = {}
 
   // Imports the Dataqna library
   const {QuestionServiceClient} = require('@google-cloud/data-qna').v1alpha;
@@ -36,19 +37,19 @@ function main(name) {
   // Instantiates a client
   const dataqnaClient = new QuestionServiceClient();
 
-  async function callGetQuestion() {
+  async function callUpdateUserFeedback() {
     // Construct request
     const request = {
-      name,
+      userFeedback,
     };
 
     // Run request
-    const response = await dataqnaClient.getQuestion(request);
+    const response = await dataqnaClient.updateUserFeedback(request);
     console.log(response);
   }
 
-  callGetQuestion();
-  // [END dataqna_v1alpha_generated_QuestionService_GetQuestion_async]
+  callUpdateUserFeedback();
+  // [END dataqna_v1alpha_generated_QuestionService_UpdateUserFeedback_async]
 }
 
 process.on('unhandledRejection', err => {

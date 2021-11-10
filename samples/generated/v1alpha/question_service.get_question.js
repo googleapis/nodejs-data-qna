@@ -12,23 +12,22 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-
 'use strict';
 
-function main(parent, question) {
-  // [START dataqna_v1alpha_generated_QuestionService_CreateQuestion_async]
+function main(name) {
+  // [START dataqna_v1alpha_generated_QuestionService_GetQuestion_async]
   /**
    * TODO(developer): Uncomment these variables before running the sample.
    */
   /**
-   *  Required. The name of the project this data source reference belongs to.
-   *  Example: `projects/foo/locations/bar`
+   *  Required. The unique identifier for the question.
+   *  Example: `projects/foo/locations/bar/questions/1234`
    */
-  // const parent = 'abc123'
+  // const name = 'abc123'
   /**
-   *  Required. The question to create.
+   *  The list of fields to be retrieved.
    */
-  // const question = {}
+  // const readMask = {}
 
   // Imports the Dataqna library
   const {QuestionServiceClient} = require('@google-cloud/data-qna').v1alpha;
@@ -36,20 +35,19 @@ function main(parent, question) {
   // Instantiates a client
   const dataqnaClient = new QuestionServiceClient();
 
-  async function callCreateQuestion() {
+  async function callGetQuestion() {
     // Construct request
     const request = {
-      parent,
-      question,
+      name,
     };
 
     // Run request
-    const response = await dataqnaClient.createQuestion(request);
+    const response = await dataqnaClient.getQuestion(request);
     console.log(response);
   }
 
-  callCreateQuestion();
-  // [END dataqna_v1alpha_generated_QuestionService_CreateQuestion_async]
+  callGetQuestion();
+  // [END dataqna_v1alpha_generated_QuestionService_GetQuestion_async]
 }
 
 process.on('unhandledRejection', err => {

@@ -12,20 +12,22 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-
 'use strict';
 
-function main(name) {
-  // [START dataqna_v1alpha_generated_QuestionService_GetUserFeedback_async]
+function main(name, interpretationIndex) {
+  // [START dataqna_v1alpha_generated_QuestionService_ExecuteQuestion_async]
   /**
    * TODO(developer): Uncomment these variables before running the sample.
    */
   /**
-   *  Required. The unique identifier for the user feedback.
-   *  User feedback is a singleton resource on a Question.
-   *  Example: `projects/foo/locations/bar/questions/1234/userFeedback`
+   *  Required. The unique identifier for the question.
+   *  Example: `projects/foo/locations/bar/questions/1234`
    */
   // const name = 'abc123'
+  /**
+   *  Required. Index of the interpretation to execute.
+   */
+  // const interpretationIndex = 1234
 
   // Imports the Dataqna library
   const {QuestionServiceClient} = require('@google-cloud/data-qna').v1alpha;
@@ -33,19 +35,20 @@ function main(name) {
   // Instantiates a client
   const dataqnaClient = new QuestionServiceClient();
 
-  async function callGetUserFeedback() {
+  async function callExecuteQuestion() {
     // Construct request
     const request = {
       name,
+      interpretationIndex,
     };
 
     // Run request
-    const response = await dataqnaClient.getUserFeedback(request);
+    const response = await dataqnaClient.executeQuestion(request);
     console.log(response);
   }
 
-  callGetUserFeedback();
-  // [END dataqna_v1alpha_generated_QuestionService_GetUserFeedback_async]
+  callExecuteQuestion();
+  // [END dataqna_v1alpha_generated_QuestionService_ExecuteQuestion_async]
 }
 
 process.on('unhandledRejection', err => {
