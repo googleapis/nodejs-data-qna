@@ -12,5 +12,5 @@
   "api_id": "dataqna.googleapis.com",
   "issue_tracker": "",
   "api_shortname": "dataqna",
-  "library_type": ""
+  "library_type": "GAPIC_AUTO"
 }
