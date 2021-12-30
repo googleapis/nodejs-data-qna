@@ -6,7 +6,6 @@
 
 
 [![npm version](https://img.shields.io/npm/v/@google-cloud/data-qna.svg)](https://www.npmjs.org/package/@google-cloud/data-qna)
-[![codecov](https://img.shields.io/codecov/c/github/googleapis/nodejs-data-qna/main.svg?style=flat)](https://codecov.io/gh/googleapis/nodejs-data-qna)
 
 
 
